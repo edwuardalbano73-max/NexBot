@@ -17,6 +17,23 @@ const {
 
 const fs = require("fs");
 const path = require("path");
+const http = require("http");
+
+// =====================================================
+// SERVIDOR HTTP PARA RENDER
+// =====================================================
+
+const PORT = process.env.PORT || 3000;
+
+http.createServer((req, res) => {
+  res.writeHead(200, {
+    "Content-Type": "text/plain; charset=utf-8"
+  });
+
+  res.end("🤖 NexBot está funcionando correctamente.");
+}).listen(PORT, "0.0.0.0", () => {
+  console.log(`🌐 Servidor web activo en el puerto ${PORT}`);
+});
 
 // =====================================================
 // NEXBOT
