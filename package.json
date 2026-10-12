@@ -1,0 +1,15 @@
+{
+  "name": "nexbot",
+  "version": "1.0.0",
+  "description": "Bot público de Discord profesional",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.25.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
